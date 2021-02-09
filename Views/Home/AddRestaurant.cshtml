@@ -1,0 +1,35 @@
+﻿@*
+*@
+@{
+    ViewBag.Title = "Add a Restaurant";
+}
+@model IS413_Assignment_4.Models.RestResponse
+<form asp-action="AddRestaurant" method="post">
+    <div>
+        <label asp-for="Name">Name:</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="RestName">Restaurant Name:</label>
+        <input asp-for="RestName" />
+    </div>
+    <div>
+        <label asp-for="RestDish">Favorite Dish:</label>
+        <input asp-for="RestDish" />
+    </div>
+    <div>
+        <label asp-for="RestPhone">Restaurant Phone Number:</label>
+        <input asp-for="RestPhone" />
+    </div>
+    <div>
+        <label asp-for="RestAddress">Restaurant Address:</label>
+        <input asp-for="RestAddress" />
+    </div>
+    <div>
+        <label asp-for="RestLink">Restaurant Link:</label>
+        <input asp-for="RestLink" />
+    </div>
+    <button type="submit">Add Restaurant</button>
+</form>
+<br />
+<br />

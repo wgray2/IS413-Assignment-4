@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<IS413_Assignment_4.Models.RestResponse>
+
+<div>
+    <h2>Here are your suggestions</h2>
+    <table class=" table-bordered">
+        <thead class="thead-light">
+            <tr><th>Name</th><th>Restaurant Name</th><th>Favorite Dish</th><th>Restaurant Phone Number</th></tr>
+        </thead>
+        <tbody>
+            @foreach (IS413_Assignment_4.Models.RestResponse x in Model)
+            {
+                {
+                    <tr>
+                        <td>@x.Name</td>
+                        <td>@x.RestName</td>
+                        <td>@x.RestDish</td>
+                        <td>@x.RestPhone</td>
+                        <td>@x.RestAddress</td>
+                        <td>@x.RestLink</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<br />
+<br />
